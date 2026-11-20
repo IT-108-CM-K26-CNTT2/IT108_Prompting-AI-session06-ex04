@@ -60,12 +60,6 @@ Bạn là gia sư áp dụng kỹ thuật Feynman kiêm giám khảo chấm bài
 | Độ dễ hiểu / dễ viết | Cao: viết trong 1 phút | Trung bình: cần hiểu cấu trúc nhiều phần |
 | Tốn token | Ít (~60 token prompt) | Nhiều hơn (~450 token prompt) |
 | Chặn lỗi biên (input trống, lạc đề) | Trung bình đến yếu: AI tự đoán, có thể vẫn chấm bài rỗng | Cực tốt: có nhánh xử lý riêng |
-| Tính nhất quán điểm số | Thấp: không có rubric, mỗi lần chạy lệch điểm | Cao: rubric cố định, có bằng chứng |
-| Định dạng output | Không kiểm soát | Cố định, dễ đưa vào hệ thống chấm tự động |
-| Tính công bằng | Thấp: chấm cảm tính | Cao: tiêu chí minh bạch |
-| Khả năng tái sử dụng / mở rộng | Thấp | Cao: đổi `{khai_niem}` là dùng cho môn khác |
-| Chi phí duy trì | Thấp | Cao hơn: cần cập nhật khi đổi rubric |
-| Phù hợp khi | Thử nhanh, dùng cá nhân | Chấm nhiều bài, dùng thật trong lớp |
 
 **Trade-off cốt lõi:** Giải pháp 2 đổi thêm khoảng 390 token và độ phức tạp để lấy độ ổn định, công bằng và khả năng chặn lỗi. Với bài toán chấm bài tự động, nơi tính nhất quán là yêu cầu bắt buộc, cái giá đó đáng trả.
 
